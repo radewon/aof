@@ -1,7 +1,6 @@
 package net.radewon;
-
 public enum Item {
-    HERMES_BOOTS,
+    //HERMES_BOOTS("Hermes Boots"),
     BAND_OF_REGENERATION,
     MAGIC_MIRROR,
     ABIGAIL_FLOWER,
@@ -50,5 +49,21 @@ public enum Item {
     RECALL_POTION,
     WORMHOLE_POTION,
     HEALTH_POTION,
-    TELEPORTATION_POTION
+    TELEPORTATION_POTION;
+
+    private String name;
+    private String desc;
+    private Utility[] mode;
+
+    Item() {
+        this.name = "null";
+        this.desc = "placeholder description";
+        this.mode = null;
+    }
+
+    Item(String name, String desc, Utility... mode) {
+        this.name = "null";
+        this.desc = "placeholder description";
+        this.mode = null;
+    }
 }
